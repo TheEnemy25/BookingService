@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bWgw7eQ3leuIHxTocxP4kgTy2tup1OqrUktNlOmydF4Yh9CAr/s7dhJSAzXoQR0guXDLnQw7FM96jOonHUvP9w==",
+  "dgSpecHash": "dn5YV3S0HDk0bfaUtlJe33t8XCdN711KzvnKabza0SDE6UE7Og4qN9t5dJEjtDN3SQa+k02cEsiiPEoQgssoAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andri\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

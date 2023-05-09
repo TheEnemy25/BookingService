@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "frUKV+ad9qoqzhqCTQVCBlSfCqJTnRNIrvtQg7LyWps2ozwbv8nJ0/hH5e/TM3O0azGVkqheNToJqpDmUMRC8w==",
+  "dgSpecHash": "vlFLRThDMtyxoWsc5EPyEv08yWqQ6MiKT0j5m+25DdO5BD4JDY+lSnync4wB4FQQK3Uhot9Aw3u2o5tzrfefCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService\\BookingService.API.csproj",
+  "projectFilePath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService\\BookingService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andri\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
