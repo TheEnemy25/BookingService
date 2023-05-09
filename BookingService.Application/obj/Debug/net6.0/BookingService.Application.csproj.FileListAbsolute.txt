@@ -1,0 +1,5 @@
+C:\Users\andri\source\repos\BookingService\BookingService.Application\obj\Debug\net6.0\BookingService.Application.csproj.AssemblyReference.cache
+C:\Users\andri\source\repos\BookingService\BookingService.Application\obj\Debug\net6.0\BookingService.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andri\source\repos\BookingService\BookingService.Application\obj\Debug\net6.0\BookingService.Application.AssemblyInfoInputs.cache
+C:\Users\andri\source\repos\BookingService\BookingService.Application\obj\Debug\net6.0\BookingService.Application.AssemblyInfo.cs
+C:\Users\andri\source\repos\BookingService\BookingService.Application\obj\Debug\net6.0\BookingService.Application.csproj.CoreCompileInputs.cache

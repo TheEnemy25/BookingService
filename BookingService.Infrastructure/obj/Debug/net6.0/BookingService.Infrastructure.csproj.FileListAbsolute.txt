@@ -1,0 +1,17 @@
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\bin\Debug\net6.0\BookingService.Infrastructure.deps.json
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\bin\Debug\net6.0\BookingService.Infrastructure.runtimeconfig.json
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\bin\Debug\net6.0\BookingService.Infrastructure.dll
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\bin\Debug\net6.0\BookingService.Infrastructure.pdb
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\bin\Debug\net6.0\BookingService.Domain.dll
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\bin\Debug\net6.0\BookingService.Domain.pdb
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.AssemblyInfo.cs
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.csproj.CopyComplete
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.dll
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\refint\BookingService.Infrastructure.dll
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.pdb
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.genruntimeconfig.cache
+C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\ref\BookingService.Infrastructure.dll

@@ -1,0 +1,14 @@
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\bin\Debug\net6.0\BookingService.Domain.deps.json
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\bin\Debug\net6.0\BookingService.Domain.runtimeconfig.json
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\bin\Debug\net6.0\BookingService.Domain.dll
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\bin\Debug\net6.0\BookingService.Domain.pdb
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\obj\Debug\net6.0\BookingService.Domain.csproj.AssemblyReference.cache
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\obj\Debug\net6.0\BookingService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\obj\Debug\net6.0\BookingService.Domain.AssemblyInfoInputs.cache
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\obj\Debug\net6.0\BookingService.Domain.AssemblyInfo.cs
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\obj\Debug\net6.0\BookingService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\obj\Debug\net6.0\BookingService.Domain.dll
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\obj\Debug\net6.0\refint\BookingService.Domain.dll
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\obj\Debug\net6.0\BookingService.Domain.pdb
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\obj\Debug\net6.0\BookingService.Domain.genruntimeconfig.cache
+C:\Users\andri\source\repos\BookingService\BookingService.Domain\obj\Debug\net6.0\ref\BookingService.Domain.dll
