@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BookingService.Application",
+    "\\BookingService.Application\\Services",
+    "\\BookingService.Application\\Services\\Interfaces"
+  ],
+  "SelectedNode": "\\BookingService.Application\\Services\\UserService.cs",
+  "PreviewInSolutionExplorer": false
+}

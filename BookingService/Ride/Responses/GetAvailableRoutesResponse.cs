@@ -2,5 +2,6 @@
 {
     public class GetAvailableRoutesResponse
     {
+        public IEnumerable<RouteDto> Routes { get; set; }
     }
 }

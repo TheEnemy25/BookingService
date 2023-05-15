@@ -46,7 +46,7 @@ namespace BookingService.Application.Services
                 throw new HttpRequestException($"Request failed with status code {response.StatusCode}");
             }
         }
-        public async Task<RouteDto> GetRouteByIdAsync(int routeId)
+        public async Task<RouteDto> GetRouteByIdAsync(string routeId)
         {
             HttpResponseMessage response = await _httpClient.GetAsync($"GetRouteById/{routeId}");
 

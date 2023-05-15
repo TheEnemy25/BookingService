@@ -1,5 +1,6 @@
 ﻿using BookingService.Application.Services.Interfaces;
 using BookingService.Domain.Dto;
+using BookingService.Domain.Entities;
 using BookingService.Domain.Repositories;
 using BookingService.Infrastructure;
 using System;
@@ -42,10 +43,13 @@ namespace BookingService.Application.Services
             if (route == null)
             {
                 throw new ArgumentException($"Route with id {bookRideParamsDto.RouteId} not found");
-            }   
+            }
 
             // Make a request to TicketService to generate ticket code
-            var ticketCode = await _ticketService.GenerateTicketCodeAsync();
+            var ticketCode = await _ticketService.GenerateTicket(userId, new RideConfirmationDto
+            {
+                RouteId = route.Id.ToString(),
+            });
 
             // Create a new Ride
             var ride = new RideDto
