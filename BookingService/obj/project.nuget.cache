@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "vlFLRThDMtyxoWsc5EPyEv08yWqQ6MiKT0j5m+25DdO5BD4JDY+lSnync4wB4FQQK3Uhot9Aw3u2o5tzrfefCA==",
+  "dgSpecHash": "EY0FF/LlNMTUQHYz3UTwXent0/9gL0JWP8C8z702XQPiHrKaD0xrH9F6db+6F5ItnouENNUSSCqHYnf5pRTNxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService\\BookingService.API.csproj",
+  "projectFilePath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService\\BookingService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andri\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\andri\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\andri\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.16\\microsoft.aspnetcore.authentication.jwtbearer.6.0.16.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BookingService.Infrastructure
 {
-    internal class BookingServiceContext : DbContext
+    public class BookingServiceContext : DbContext
     {
         public DbSet<Route> Routes { get; set; }
         public DbSet<Seat> Seats { get; set; }
