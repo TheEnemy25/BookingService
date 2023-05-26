@@ -5,11 +5,11 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingService.API", "BookingService\BookingService.API.csproj", "{A6DF4B14-7675-44AC-8B0B-B9D2EF0BEDE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingService.Infrastructure", "BookingService.Infrastructure\BookingService.Infrastructure.csproj", "{C359F333-60E6-4BD5-B7D6-8BA1845E00EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingService.Infrastructure", "BookingService.Infrastructure\BookingService.Infrastructure.csproj", "{C359F333-60E6-4BD5-B7D6-8BA1845E00EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingService.Domain", "BookingService.Domain\BookingService.Domain.csproj", "{72CA407A-6575-48DC-B482-DB3823DA154F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingService.Domain", "BookingService.Domain\BookingService.Domain.csproj", "{72CA407A-6575-48DC-B482-DB3823DA154F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingService.Application", "BookingService.Application\BookingService.Application.csproj", "{DDCA8E9C-68F0-4BC2-87E1-99D9B1D2952E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingService.Application", "BookingService.Application\BookingService.Application.csproj", "{DDCA8E9C-68F0-4BC2-87E1-99D9B1D2952E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
