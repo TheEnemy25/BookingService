@@ -25,8 +25,8 @@ namespace BookingService.API.Controllers
         {
             var searchParams = new RouteSearchParamsDto
             {
-                From = request.DepartureCity,
-                To = request.ArrivalCity,
+                From = request.From,
+                To = request.To,
                 DepartureTime = request.DepartureDate,
             };
 
@@ -34,7 +34,7 @@ namespace BookingService.API.Controllers
 
             var response = new GetAvailableRoutesResponse
             {
-                Routes = availableRoutes
+                AvailableRoutes = availableRoutes
             };
 
             return Ok(response);

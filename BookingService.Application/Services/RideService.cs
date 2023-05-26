@@ -1,9 +1,11 @@
-﻿using BookingService.Application.Services.Interfaces;
+﻿using AutoMapper;
+using BookingService.Application.Services.Interfaces;
 using BookingService.Domain.Dto;
 using BookingService.Domain.Entities;
 using BookingService.Domain.Repositories;
 using BookingService.Infrastructure;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,22 +13,29 @@ using System.Threading.Tasks;
 
 namespace BookingService.Application.Services
 {
-    public class RideService
+    public class RideService : IRideService
     {
+        private readonly IMapper _mapper;
         private readonly IRouteApiService _routeApiService;
         private readonly ITicketService _ticketService;
         private readonly IUserService _userService;
         private readonly IUnitOfWork _unitOfWork;
 
-        public RideService(IRouteApiService routeApiService, ITicketService ticketService, IUserService userService, IUnitOfWork unitOfWork)
+        public RideService(
+        IMapper mapper,
+        IRouteApiService routeApiService,
+        ITicketService ticketService,
+        IUserService userService,
+        IUnitOfWork unitOfWork)
         {
+            _mapper = mapper;
             _routeApiService = routeApiService;
             _ticketService = ticketService;
             _userService = userService;
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<IEnumerable<RouteDto>> GetAvailableRoutesAsync(RouteSearchParamsDto routeSearchParamsDto)
+        public async Task<ICollection<RouteDto>> GetAvailableRoutesAsync(RouteSearchParamsDto routeSearchParamsDto)
         {
             return await _routeApiService.GetAvailableRoutesAsync(routeSearchParamsDto);
         }
@@ -45,30 +54,26 @@ namespace BookingService.Application.Services
                 throw new ArgumentException($"Route with id {bookRideParamsDto.RouteId} not found");
             }
 
-            // Make a request to TicketService to generate ticket code
-            var ticketCode = await _ticketService.GenerateTicket(userId, new RideConfirmationDto
+            var rideConfirmationDto = new RideConfirmationDto
             {
-                RouteId = route.Id.ToString(),
-            });
+                RouteId = route.Id.ToString()
+            };
 
-            // Create a new Ride
-            var ride = new RideDto
+            var ticketCode = await _ticketService.GenerateTicket(userId, rideConfirmationDto);
+
+            var rideDto = new RideDto
             {
                 UserId = user.Id,
                 RouteId = route.Id,
                 TicketCode = ticketCode
             };
 
-            // Add the Ride to the User's rides
-            user.Rides.Add(ride);
+            user.Rides.Add(rideDto);
 
-            // Update the User in the database
             await _userService.UpdateUser(user);
-
-            // Save changes to the database
             await _unitOfWork.SaveChangesAsync();
 
-            return ride;
+            return rideDto;
         }
     }
 }

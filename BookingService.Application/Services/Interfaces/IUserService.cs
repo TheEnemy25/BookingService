@@ -13,6 +13,6 @@ namespace BookingService.Application.Services.Interfaces
         Task UpdateUser(UserDto userDto);
         Task DeleteUser(int userId);
         Task<UserDto> GetUserById(int userId);
-        Task<IEnumerable<RideDto>> GetUserRides(int userId);
+        Task<ICollection<RideDto>> GetUserRides(int userId);
     }
 }

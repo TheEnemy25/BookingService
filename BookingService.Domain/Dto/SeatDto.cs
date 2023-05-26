@@ -8,5 +8,6 @@ namespace BookingService.Domain.Dto
 {
     public class SeatDto
     {
+        public int Number { get; set; }
     }
 }

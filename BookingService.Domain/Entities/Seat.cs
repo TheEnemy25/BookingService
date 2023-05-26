@@ -8,7 +8,7 @@ namespace BookingService.Infrastructure.Entities
 {
     public class Seat
     {
-        public int Id { get; set; }
+        public int SeatId { get; set; }
         public int Number { get; set; }
     }
 }

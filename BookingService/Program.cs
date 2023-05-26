@@ -1,41 +1,20 @@
-using BookingService.Application.Services.Interfaces;
-using BookingService.Application.Services;
-using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Reflection;
+using BookingService.API;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Завантаження конфігурації з appsettings.json
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json")
+    .Build();
+
+// Налаштування сервісів
+builder.Services.AddAppServices(configuration);
+builder.Services.AddJWTAuthentication(configuration);
 builder.Services.AddControllers();
-builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IRouteApiService, RouteApiService>();
-builder.Services.AddScoped<ITicketService, TicketService>();
-builder.Services.AddScoped<IUserService, UserService>();
-// Exception handling middleware
-//builder.ConfigureExceptionHandler();
-
-
-
-
-
-
-//builder.Services.AddControllers().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateBookingRequestValidator>());
-
-var jwtKey = Encoding.ASCII.GetBytes("your-secret-key");
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = false,
-            ValidateAudience = false,
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(jwtKey)
-        };
-    });
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwagger();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
@@ -53,14 +32,18 @@ else
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
+    c.DefaultModelsExpandDepth(-1);
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "BookingService");
 });
+
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
 });
+
 app.Run();

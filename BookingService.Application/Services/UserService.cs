@@ -70,7 +70,7 @@ namespace BookingService.Application.Services
             return user;
         }
 
-        public async Task<IEnumerable<RideDto>> GetUserRides(int userId)
+        public async Task<ICollection<RideDto>> GetUserRides(int userId)
         {
             // Отримання поїздок користувача за ідентифікатором
             // Логіка отримання поїздок може бути додана тут

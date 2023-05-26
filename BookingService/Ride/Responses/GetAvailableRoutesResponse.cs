@@ -2,6 +2,6 @@
 {
     public class GetAvailableRoutesResponse
     {
-        public IEnumerable<RouteDto> Routes { get; set; }
+        public ICollection<RouteDto> AvailableRoutes { get; set; } = new List<RouteDto>();
     }
 }
