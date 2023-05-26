@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Ardalis.Specification;
+using BookingService.Domain.Entities;
 
 namespace BookingService.Domain.Specifications
 {
-    internal class GetUserWithAllRidesByld
+    public class GetUserWithAllRidesById : Specification<User>
     {
+        public GetUserWithAllRidesById(int userId)
+        {
+            Query.Where(u => u.UserId == userId).Include(u => u.Routes);
+        }
     }
 }

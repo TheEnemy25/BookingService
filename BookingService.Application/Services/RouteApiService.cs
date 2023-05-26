@@ -18,14 +18,14 @@ namespace BookingService.Application.Services
             _httpClient = httpClient;
         }
 
-        public async Task<IEnumerable<RouteDto>> GetAvailableRoutesAsync(RouteSearchParamsDto routeSearchParams)
+        public async Task<ICollection<RouteDto>> GetAvailableRoutesAsync(RouteSearchParamsDto routeSearchParams)
         {
             HttpResponseMessage response = await _httpClient.PostAsJsonAsync("GetAvailableRoutes", routeSearchParams);
 
             if (response.IsSuccessStatusCode)
             {
 
-                return await response.Content.ReadFromJsonAsync<IEnumerable<RouteDto>>();
+                return await response.Content.ReadFromJsonAsync<ICollection<RouteDto>>();
             }
             else
             {
@@ -46,7 +46,7 @@ namespace BookingService.Application.Services
                 throw new HttpRequestException($"Request failed with status code {response.StatusCode}");
             }
         }
-        public async Task<RouteDto> GetRouteByIdAsync(int routeId)
+        public async Task<RouteDto> GetRouteByIdAsync(string routeId)
         {
             HttpResponseMessage response = await _httpClient.GetAsync($"GetRouteById/{routeId}");
 

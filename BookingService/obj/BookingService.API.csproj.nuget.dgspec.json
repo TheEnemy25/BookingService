@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService\\BookingService.API.csproj": {}
+    "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService\\BookingService.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj": {
+    "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj",
+        "projectUniqueName": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj",
         "projectName": "BookingService.Application",
-        "projectPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj",
+        "projectPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj",
         "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Application\\obj\\",
+        "outputPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj": {
-                "projectPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj"
+              "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj": {
+                "projectPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj"
               },
-              "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj"
+              "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj"
               }
             }
           }
@@ -51,9 +51,37 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -70,6 +98,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -92,14 +132,14 @@
         }
       }
     },
-    "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj": {
+    "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj",
         "projectName": "BookingService.Domain",
-        "projectPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj",
+        "projectPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj",
         "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Domain\\obj\\",
+        "outputPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -132,6 +172,38 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Ardalis.Specification.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -147,6 +219,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -169,14 +253,14 @@
         }
       }
     },
-    "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj": {
+    "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj",
         "projectName": "BookingService.Infrastructure",
-        "projectPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Infrastructure\\BookingService.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -197,8 +281,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj": {
-                "projectPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj"
+              "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj": {
+                "projectPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Domain\\BookingService.Domain.csproj"
               }
             }
           }
@@ -213,6 +297,38 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Ardalis.Specification.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -228,6 +344,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -250,14 +378,14 @@
         }
       }
     },
-    "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService\\BookingService.API.csproj": {
+    "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService\\BookingService.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService\\BookingService.API.csproj",
+        "projectUniqueName": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService\\BookingService.API.csproj",
         "projectName": "BookingService.API",
-        "projectPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService\\BookingService.API.csproj",
+        "projectPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService\\BookingService.API.csproj",
         "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService\\obj\\",
+        "outputPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -278,8 +406,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj": {
-                "projectPath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj"
+              "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj": {
+                "projectPath": "C:\\Users\\andri\\source\\repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj"
               }
             }
           }
@@ -294,10 +422,38 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -313,6 +469,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

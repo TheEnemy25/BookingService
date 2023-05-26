@@ -9,8 +9,8 @@ namespace BookingService.Application.Services.Interfaces
 {
     public interface IRouteApiService
     {
-        public Task<IEnumerable<RouteDto>> GetAvailableRoutesAsync(RouteSearchParamsDto routeSearchParams);
+        public Task<ICollection<RouteDto>> GetAvailableRoutesAsync(RouteSearchParamsDto routeSearchParams);
         Task<RideConfirmationDto> BookRideAsync(BookRideParamsDto bookRideParams);
-        Task<RouteDto> GetRouteByIdAsync(int routeId);
+        Task<RouteDto> GetRouteByIdAsync(string routeId);
     }
 }
