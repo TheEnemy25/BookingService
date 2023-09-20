@@ -1,7 +1,6 @@
 ﻿using BookingService.Application.Exceptions;
 using BookingService.Domain.Entities;
 using BookingService.Domain.Interfaces.Repositories;
-using BookingService.Domain.Repositories;
 using MediatR;
 
 namespace BookingService.Application.Features.Users.Commands.DeleteUser

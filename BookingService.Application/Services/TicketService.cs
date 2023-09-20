@@ -1,6 +1,7 @@
-﻿using BookingService.Domain.Dto;
+﻿using BookingService.Application.Features.Rides.Commands.BookRide;
+using BookingService.Application.Interfaces.Services.Infrastructure;
 using BookingService.Domain.Entities;
-using BookingService.Domain.Repositories;
+using BookingService.Domain.Interfaces.Repositories;
 using System.Text.Json;
 
 namespace BookingService.Application.Services

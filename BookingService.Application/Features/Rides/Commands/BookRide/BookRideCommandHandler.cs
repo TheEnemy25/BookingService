@@ -4,8 +4,6 @@ using BookingService.Application.Interfaces.Services.Infrastructure;
 using BookingService.Application.Services;
 using BookingService.Domain.Entities;
 using BookingService.Domain.Interfaces.Repositories;
-using BookingService.Domain.Repositories;
-using BookingService.Infrastructure.Entities;
 using MediatR;
 
 namespace BookingService.Application.Features.Rides.Commands.BookRide

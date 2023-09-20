@@ -1,6 +1,4 @@
-﻿using BookingService.Domain.Dto;
-
-namespace BookingService.Application.Features.Rides.Commands.BookRide
+﻿namespace BookingService.Application.Features.Rides.Commands.BookRide
 {
     public class RideConfirmationDto
     {

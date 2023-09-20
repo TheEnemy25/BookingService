@@ -1,10 +1,8 @@
 ﻿using AutoMapper;
 using BookingService.Application.Exceptions;
-using BookingService.Domain.Dto;
 using BookingService.Domain.Dtos;
 using BookingService.Domain.Entities;
 using BookingService.Domain.Interfaces.Repositories;
-using BookingService.Domain.Repositories;
 using MediatR;
 
 namespace BookingService.Application.Features.Users.Queries.GetUserById

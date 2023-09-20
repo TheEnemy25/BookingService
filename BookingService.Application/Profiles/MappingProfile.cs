@@ -1,7 +1,10 @@
 ﻿using AutoMapper;
-using BookingService.Domain.Dto;
+using BookingService.Application.Features.Rides.Commands.BookRide;
+using BookingService.Application.Features.Users.Commands.CreateUser;
+using BookingService.Application.Features.Users.Commands.UpdateUser;
+using BookingService.Application.Features.Users.Queries.GetUserRides;
+using BookingService.Domain.Dtos;
 using BookingService.Domain.Entities;
-using BookingService.Infrastructure.Entities;
 
 namespace BookingService.Application.Profiles
 {
