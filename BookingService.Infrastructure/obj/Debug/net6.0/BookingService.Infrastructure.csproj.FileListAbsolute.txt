@@ -15,3 +15,5 @@ C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Deb
 C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.pdb
 C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\BookingService.Infrastructure.genruntimeconfig.cache
 C:\Users\andri\source\repos\BookingService\BookingService.Infrastructure\obj\Debug\net6.0\ref\BookingService.Infrastructure.dll
+C:\Users\andri\Source\Repos\BookingService\BookingService.Infrastructure\bin\Debug\net6.0\BookingService.Application.dll
+C:\Users\andri\Source\Repos\BookingService\BookingService.Infrastructure\bin\Debug\net6.0\BookingService.Application.pdb

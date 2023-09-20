@@ -3,3 +3,17 @@ C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\
 C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.AssemblyInfoInputs.cache
 C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.AssemblyInfo.cs
 C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\bin\Debug\net6.0\BookingService.Persistence.deps.json
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\bin\Debug\net6.0\BookingService.Persistence.runtimeconfig.json
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\bin\Debug\net6.0\BookingService.Persistence.dll
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\bin\Debug\net6.0\BookingService.Persistence.pdb
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\bin\Debug\net6.0\BookingService.Application.dll
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\bin\Debug\net6.0\BookingService.Domain.dll
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\bin\Debug\net6.0\BookingService.Application.pdb
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\bin\Debug\net6.0\BookingService.Domain.pdb
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.csproj.CopyComplete
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.dll
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\refint\BookingService.Persistence.dll
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.pdb
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.genruntimeconfig.cache
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\ref\BookingService.Persistence.dll

@@ -1,5 +1,4 @@
 using BookingService.Api.Middleware;
-using BookingService.API.Middleware;
 using BookingService.Application;
 using BookingService.Infrastructure;
 using BookingService.Persistence;
@@ -7,11 +6,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
-using System.Text.Encodings.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
