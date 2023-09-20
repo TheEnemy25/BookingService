@@ -1,59 +1,58 @@
-﻿using AutoMapper;
-using BookingService.API.User.Requests;
-using BookingService.API.User.Responses;
-using BookingService.Application.Services.Interfaces;
-using BookingService.Domain.Dto;
+﻿using BookingService.Domain.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
-
 
 namespace BookingService.API
 {
-    [Route("api/users")]
+    [Route("api/[controller]")]
     [ApiController]
-
-    public class UserController : ControllerBase
+    [Authorize]
+    public class UsersController : ControllerBase
     {
-        private readonly IUserService _userService;
-        private readonly IMapper _mapper;
+        private readonly IMediator _mediator;
 
-        public UserController(IUserService userService, IMapper mapper)
+        public UsersController(IMediator mediator)
         {
-            _userService = userService;
-            _mapper = mapper;
+            _mediator = mediator;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody] CreateUserRequest createUserRequest)
+        [HttpGet("{userId}", Name = "GetUserById")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(404)]
+        public async Task<ActionResult<UserDto>> GetUserById(int userId)
         {
-            var userDto = _mapper.Map<UserDto>(createUserRequest);
-            var createdUser = await _userService.CreateUser(userDto);
-            var userResponse = _mapper.Map<UserResponse>(createdUser);
-            return Ok(userResponse);
+            var user = await _mediator.Send(new GetUserByIdQuery() { UserId = userId });
+
+            return Ok(user);
         }
 
-        [HttpGet("{userId}")]
-        public async Task<IActionResult> GetUserById(int userId)
+        [AllowAnonymous]
+        [HttpPost(Name = "CreateUser")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        public async Task<ActionResult<CreateUserResponseDto>> CreateUser([FromBody] CreateUserCommand createUserCommand)
         {
-            var userDto = await _userService.GetUserById(userId);
-            var userResponse = _mapper.Map<UserResponse>(userDto);
-            return Ok(userResponse);
-        }
+            var createUser = await _mediator.Send(createUserCommand);
 
-        [HttpPut]
-        public async Task<IActionResult> UpdateUser([FromBody] UpdateUserRequest updateUserRequest)
-        {
-            var userDto = _mapper.Map<UserDto>(updateUserRequest);
-            await _userService.UpdateUser(userDto);
-            return Ok();
+            return Ok(createUser);
         }
-
-        [HttpDelete("{userId}")]
-        public async Task<IActionResult> DeleteUser(int userId)
+        [HttpPut(Name = "UpdateUser")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        public async Task<ActionResult> UpdateUser([FromBody] UpdateUserCommand updateUserCommand)
         {
-            await _userService.DeleteUser(userId);
-            return Ok();
+            await _mediator.Send(updateUserCommand);
+
+            return NoContent();
+        }
+        [HttpDelete("{userId}", Name = "DeleteUser")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+        public async Task<ActionResult> DeleteUser(int userId)
+        {
+            await _mediator.Send(new DeleteUserCommand() { UserId = userId });
+            return NoContent();
         }
     }
 }
-

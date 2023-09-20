@@ -1,12 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BookingService.Domain.Dto;
+using BookingService.Domain.Entities;
+using BookingService.Domain.Repositories;
+using System.Text.Json;
 
 namespace BookingService.Application.Services
 {
-    internal class TicketService
+    public class TicketService : ITicketService
     {
+        private readonly IUnitOfWork _unitOfWork;
+
+        public TicketService(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+
+        public async Task<string> GenerateTicket(int userId, RideConfirmationDto rideDto)
+        {
+            User user = await _unitOfWork.UserRepository.GetByIdAsync(userId);
+            string userPasswordHash = user.PasswordHash;
+
+            string serializedTicket = JsonSerializer.Serialize(rideDto);
+
+            return userPasswordHash + Math.Abs(serializedTicket.GetHashCode()).ToString();
+        }
+
+        public async Task<bool> IsValid(int userId, string ticket)
+        {
+            User user = await _unitOfWork.UserRepository.GetByIdAsync(userId);
+            string userPasswordHash = user.PasswordHash;
+
+            if (ticket.Contains(userPasswordHash))
+                return true;
+
+            return false;
+        }
     }
 }

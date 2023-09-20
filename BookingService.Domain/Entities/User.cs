@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookingService.Domain.Entities
+﻿namespace BookingService.Domain.Entities
 {
     public class User
     {
-        public int Id { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public DateTime DateOfBirth { get; set; }
-        public ICollection<Route> Routes { get; set; }
+        public int UserId { get; set; }
+        public string Email { get; set; } = string.Empty;
+        public string PasswordSalt { get; set; } = string.Empty;
+        public string PasswordHash { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public DateOnly BirthDate { get; set; }
+        public ICollection<Ride>? Rides { get; set; } = new List<Ride>();
     }
 }

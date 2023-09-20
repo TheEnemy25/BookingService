@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QCEBQQFFhnFrw2Pj+nEk8CdjNHzgZ3tvp1/0OQhHYF9ogatp6lBMGur8EDv+uGGKkXPSbphZXscKnnKvjDTbug==",
+  "dgSpecHash": "00O5CYA/PM2PNuYRUaE5+qFdAVRYQg6FM9PL0NB/DLJyNGwsJthxPz+8a6rNE5b5KiwWB66mlkYtCcHo7+nO5Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\andri\\Source\\Repos\\BookingService\\BookingService.Application\\BookingService.Application.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\andri\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\andri\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\andri\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\andri\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
