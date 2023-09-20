@@ -1,4 +1,9 @@
-﻿using BookingService.Domain.Dto;
+﻿using BookingService.Application.Features.Users.Commands.CreateUser;
+using BookingService.Application.Features.Users.Commands.DeleteUser;
+using BookingService.Application.Features.Users.Commands.UpdateUser;
+using BookingService.Application.Features.Users.Queries.GetUserById;
+using BookingService.Domain.Dtos;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

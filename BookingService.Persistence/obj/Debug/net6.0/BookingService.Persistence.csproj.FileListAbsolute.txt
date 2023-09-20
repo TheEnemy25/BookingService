@@ -1,0 +1,5 @@
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.csproj.AssemblyReference.cache
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.AssemblyInfoInputs.cache
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.AssemblyInfo.cs
+C:\Users\andri\Source\Repos\BookingService\BookingService.Persistence\obj\Debug\net6.0\BookingService.Persistence.csproj.CoreCompileInputs.cache

@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using BookingService.Application.Features.Rides.Commands.BookRide;
+using BookingService.Application.Features.Rides.Queries.GeAvailableRoutes;
+using BookingService.Application.Features.Rides.Queries.ValidateTicket;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingService.API.Controllers

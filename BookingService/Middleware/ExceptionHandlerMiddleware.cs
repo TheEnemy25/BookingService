@@ -1,8 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BookingService.Application.Exceptions;
 using System.Net;
 using System.Text.Json;
 
-namespace BookingService.API.Middleware
+namespace BookingService.Api.Middleware
 {
     public class ExceptionHandlerMiddleware
     {

@@ -1,6 +1,4 @@
-﻿using BookingService.Infrastructure.Entities;
-
-namespace BookingService.Domain.Entities
+﻿namespace BookingService.Domain.Entities
 {
     public class Ride
     {

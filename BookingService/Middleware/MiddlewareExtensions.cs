@@ -1,4 +1,4 @@
-﻿namespace BookingService.API.Middleware
+﻿namespace BookingService.Api.Middleware
 {
     public static class MiddlewareExtensions
     {
